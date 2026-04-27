@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS Assignment</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #6dd5ed, #2193b0);
+  background-size: 400% 400%;
+  animation: bgMove 10s ease infinite;
+  text-align: center;
+  color: white;
+}
+
+@keyframes bgMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+h1 {
+  margin: 30px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  margin: 15px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  text-align: left;
+  transition: 0.3s;
+  animation: fadeUp 1s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeUp {
+  from {opacity:0; transform: translateY(30px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #ffd700;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #fff;
+  white-space: pre-line;
+}
+
+input:checked + label + .answer {
+  max-height: 500px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🚀 JavaScript Assignment (No JS)</h1>
+
+<div class="section">
+<h2>1. File Practice</h2>
+
+<div class="card">
+<h3>app.js Practice</h3>
+<input type="checkbox" id="q1"><label for="q1">Show Answer</label>
+<div class="answer">
+console.log("Hello World");
+console.log("Nazia");
+console.log("Nazia");
+console.log(22);
+let city = "Karachi";
+console.log(city);
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>2. Basics</h2>
+
+<div class="card">
+<h3>JS ka use?</h3>
+<input type="checkbox" id="q2"><label for="q2">Show Answer</label>
+<div class="answer">Websites ko interactive banane ke liye</div>
+</div>
+
+<div class="card">
+<h3>Browser run?</h3>
+<input type="checkbox" id="q3"><label for="q3">Show Answer</label>
+<div class="answer">Yes</div>
+</div>
+
+<div class="card">
+<h3>High level?</h3>
+<input type="checkbox" id="q4"><label for="q4">Show Answer</label>
+<div class="answer">Easy language</div>
+</div>
+
+<div class="card">
+<h3>Interpreter?</h3>
+<input type="checkbox" id="q5"><label for="q5">Show Answer</label>
+<div class="answer">Yes</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>3. Variables</h2>
+
+<div class="card">
+<input type="checkbox" id="q6"><label for="q6">Show Answer</label>
+<div class="answer">
+let num = 10;
+const name = "Nazia";
+var age = 22;
+num = 20;
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>4. Data Types</h2>
+
+<div class="card">
+<input type="checkbox" id="q7"><label for="q7">Show Answer</label>
+<div class="answer">
+string, number, boolean, null, undefined
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>5. typeof</h2>
+
+<div class="card">
+<input type="checkbox" id="q8"><label for="q8">Show Answer</label>
+<div class="answer">
+typeof "Hello" → string
+typeof 123 → number
+typeof null → object
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>6. Arithmetic</h2>
+
+<div class="card">
+<input type="checkbox" id="q9"><label for="q9">Show Answer</label>
+<div class="answer">
++ - * / %
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>7. Comparison</h2>
+
+<div class="card">
+<input type="checkbox" id="q10"><label for="q10">Show Answer</label>
+<div class="answer">
+5 == 5 → true
+5 === "5" → false
+10 > 5 → true
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>8. Increment</h2>
+
+<div class="card">
+<input type="checkbox" id="q11"><label for="q11">Show Answer</label>
+<div class="answer">
+x++ → baad mein increase
+++x → pehle increase
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>Final Program</h2>
+
+<div class="card">
+<input type="checkbox" id="q12"><label for="q12">Show Answer</label>
+<div class="answer">
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
