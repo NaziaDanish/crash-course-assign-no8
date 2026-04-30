@@ -123,139 +123,236 @@ console.log(city);
 </div>
 
 
+<!-- SECTION 1 EXTRA -->
 <div class="section">
-<h2>2. Basics</h2>
+<h2>JS Basics (Extra)</h2>
 
 <div class="card">
-<h3>JS ka use?</h3>
-<input type="checkbox" id="q2"><label for="q2">Show Answer</label>
-<div class="answer">Websites ko interactive banane ke liye</div>
-</div>
-
-<div class="card">
-<h3>Browser run?</h3>
-<input type="checkbox" id="q3"><label for="q3">Show Answer</label>
-<div class="answer">Yes</div>
-</div>
-
-<div class="card">
-<h3>High level?</h3>
-<input type="checkbox" id="q4"><label for="q4">Show Answer</label>
-<div class="answer">Easy language</div>
-</div>
-
-<div class="card">
-<h3>Interpreter?</h3>
-<input type="checkbox" id="q5"><label for="q5">Show Answer</label>
-<div class="answer">Yes</div>
-</div>
-
-</div>
-
-
-<div class="section">
-<h2>3. Variables</h2>
-
-<div class="card">
-<input type="checkbox" id="q6"><label for="q6">Show Answer</label>
+<h3>JavaScript kya hoti hai?</h3>
+<input type="checkbox" id="q13"><label for="q13">Show Answer</label>
 <div class="answer">
-let num = 10;
-const name = "Nazia";
-var age = 22;
-num = 20;
+JavaScript ek programming language hai jo websites ko interactive banati hai.
+Is se buttons, forms aur dynamic content control hota hai.
 </div>
 </div>
-
-</div>
-
-
-<div class="section">
-<h2>4. Data Types</h2>
 
 <div class="card">
-<input type="checkbox" id="q7"><label for="q7">Show Answer</label>
+<h3>JS kaha use hoti hai?</h3>
+<input type="checkbox" id="q14"><label for="q14">Show Answer</label>
 <div class="answer">
-string, number, boolean, null, undefined
+1. Websites (buttons, forms)
+2. Games
+3. Mobile Apps
 </div>
 </div>
-
-</div>
-
-
-<div class="section">
-<h2>5. typeof</h2>
 
 <div class="card">
-<input type="checkbox" id="q8"><label for="q8">Show Answer</label>
+<h3>Browser JS kaise run karta hai?</h3>
+<input type="checkbox" id="q15"><label for="q15">Show Answer</label>
 <div class="answer">
-typeof "Hello" → string
-typeof 123 → number
-typeof null → object
+Browser ke andar JavaScript engine hota hai (jaise Chrome ka V8) jo code run karta hai.
 </div>
 </div>
-
-</div>
-
-
-<div class="section">
-<h2>6. Arithmetic</h2>
 
 <div class="card">
-<input type="checkbox" id="q9"><label for="q9">Show Answer</label>
+<h3>Hello World</h3>
+<input type="checkbox" id="q16"><label for="q16">Show Answer</label>
 <div class="answer">
-+ - * / %
+console.log("Hello World");
 </div>
 </div>
 
 </div>
 
-
+<!-- INTERPRETER -->
 <div class="section">
-<h2>7. Comparison</h2>
+<h2>Interpreter vs Compiler</h2>
 
 <div class="card">
-<input type="checkbox" id="q10"><label for="q10">Show Answer</label>
+<input type="checkbox" id="q17"><label for="q17">Show Answer</label>
 <div class="answer">
-5 == 5 → true
-5 === "5" → false
-10 > 5 → true
+Interpreter line by line code run karta hai.
+Compiler poora code ek sath convert karta hai.
 </div>
 </div>
-
-</div>
-
-
-<div class="section">
-<h2>8. Increment</h2>
 
 <div class="card">
-<input type="checkbox" id="q11"><label for="q11">Show Answer</label>
+<input type="checkbox" id="q18"><label for="q18">Show Answer</label>
 <div class="answer">
-x++ → baad mein increase
-++x → pehle increase
+Difference:
+Interpreter slow hota hai
+Compiler fast hota hai
 </div>
 </div>
-
-</div>
-
-
-<div class="section">
-<h2>Final Program</h2>
 
 <div class="card">
-<input type="checkbox" id="q12"><label for="q12">Show Answer</label>
+<input type="checkbox" id="q19"><label for="q19">Show Answer</label>
 <div class="answer">
-let a = 10;
-let b = 5;
-
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
+Example: C, C++ compiler use karti hain
 </div>
 </div>
 
 </div>
 
+<!-- VARIABLES EXTRA -->
+<div class="section">
+<h2>Variables Extra</h2>
+
+<div class="card">
+<input type="checkbox" id="q20"><label for="q20">Show Answer</label>
+<div class="answer">
+Variable data store karne ke liye hota hai
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q21"><label for="q21">Show Answer</label>
+<div class="answer">
+var = function scope
+let = block scope
+const = change nahi hota
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q22"><label for="q22">Show Answer</label>
+<div class="answer">
+Output:
+var x = 10;
+var x = 20;
+console.log(x);
+
+Output: 20
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q23"><label for="q23">Show Answer</label>
+<div class="answer">
+let y = 10;
+y = 15;
+console.log(y);
+
+Output: 15
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q24"><label for="q24">Show Answer</label>
+<div class="answer">
+const z = 5;
+z = 10;
+
+Error: const change nahi hota
+</div>
+</div>
+
+</div>
+
+<!-- TRUTHY -->
+<div class="section">
+<h2>Truthy & Falsy</h2>
+
+<div class="card">
+<input type="checkbox" id="q25"><label for="q25">Show Answer</label>
+<div class="answer">
+Falsy values:
+false, 0, "", null, undefined, NaN
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q26"><label for="q26">Show Answer</label>
+<div class="answer">
+if (0) → No
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q27"><label for="q27">Show Answer</label>
+<div class="answer">
+if ("Hello") → True
+</div>
+</div>
+
+</div>
+
+<!-- OPERATORS -->
+<div class="section">
+<h2>Operators</h2>
+
+<div class="card">
+<input type="checkbox" id="q28"><label for="q28">Show Answer</label>
+<div class="answer">
+let a = 5 + 3 * 2;
+Output: 11
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q29"><label for="q29">Show Answer</label>
+<div class="answer">
+= assign karta hai
+== compare karta hai
+=== type + value dono check karta hai
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q30"><label for="q30">Show Answer</label>
+<div class="answer">
+5 == "5" → true
+</div>
+</div>
+
+</div>
+
+<!-- LOGICAL -->
+<div class="section">
+<h2>Logical Operators</h2>
+
+<div class="card">
+<input type="checkbox" id="q31"><label for="q31">Show Answer</label>
+<div class="answer">
+&&, ||, !
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q32"><label for="q32">Show Answer</label>
+<div class="answer">
+true && false → false
+true || false → true
+</div>
+</div>
+
+</div>
+
+<!-- INCREMENT -->
+<div class="section">
+<h2>Increment / Decrement</h2>
+
+<div class="card">
+<input type="checkbox" id="q33"><label for="q33">Show Answer</label>
+<div class="answer">
+let x = 5;
+x++;
+console.log(x);
+
+Output: 6
+</div>
+</div>
+
+<div class="card">
+<input type="checkbox" id="q34"><label for="q34">Show Answer</label>
+<div class="answer">
+let y = 5;
+console.log(++y);
+
+Output: 6
+</div>
+</div>
+
+</div>
 </body>
 </html>
